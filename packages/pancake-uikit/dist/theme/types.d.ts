@@ -51,6 +51,7 @@ export declare type Colors = {
     background: string;
     backgroundDisabled: string;
     backgroundAlt: string;
+    backgroundPanel: string;
     text: string;
     textDisabled: string;
     textSubtle: string;

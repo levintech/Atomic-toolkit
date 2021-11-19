@@ -7,7 +7,7 @@ import { Colors } from "../../../../theme/types";
 
 const MenuIconWrapper = styled.div<{ borderColor: keyof Colors }>`
   align-items: center;
-  background-color: ${({ theme }) => theme.colors.background};
+  background-color: #FFA600;
   border-color: ${({ theme, borderColor }) => theme.colors[borderColor]};
   border-radius: 50%;
   border-style: solid;
@@ -35,7 +35,7 @@ const ProfileIcon = styled(Image)`
 
 export const NoProfileMenuIcon: React.FC = () => (
   <MenuIconWrapper borderColor="primary">
-    <WalletFilledIcon color="primary" width="24px" />
+    <WalletFilledIcon color="invertedContrast" width="24px" />
   </MenuIconWrapper>
 );
 

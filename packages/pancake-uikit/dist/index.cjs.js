@@ -4291,9 +4291,9 @@ var PriceLink = styled__default['default'].a(templateObject_1$a || (templateObje
 var StyledImage = styled__default['default'].img(templateObject_2$6 || (templateObject_2$6 = __makeTemplateObject(["\n  margin-right: 8px;\n"], ["\n  margin-right: 8px;\n"])));
 var CakePrice = function (_a) {
     var cakePriceUsd = _a.cakePriceUsd;
-    return cakePriceUsd ? (React__default['default'].createElement(PriceLink, { href: "https://pancakeswap.finance/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82", target: "_blank" },
+    return cakePriceUsd ? (React__default['default'].createElement(PriceLink, { href: "https://pancakeswap.finance/swap?outputCurrency=0xd91a6660e938f2a4ca9117d104f31a30be7f251b", target: "_blank" },
         React__default['default'].createElement(StyledImage, { src: "/logo.png", width: 24, height: 26 }),
-        React__default['default'].createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(3)))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 }));
+        React__default['default'].createElement(Skeleton, { width: 80, height: 24 }))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 }));
 };
 var CakePrice$1 = React__default['default'].memo(CakePrice);
 var templateObject_1$a, templateObject_2$6;

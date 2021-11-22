@@ -4287,13 +4287,22 @@ var PanelBody = function (_a) {
 };
 var templateObject_1$b;
 
-var PriceLink = styled__default['default'].a(templateObject_1$a || (templateObject_1$a = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  img {\n    transition: transform 0.3s;\n  }\n  :hover {\n    img {\n      transform: scale(1.2);\n    }\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  img {\n    transition: transform 0.3s;\n  }\n  :hover {\n    img {\n      transform: scale(1.2);\n    }\n  }\n"])));
+styled__default['default'].a(templateObject_1$a || (templateObject_1$a = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  img {\n    transition: transform 0.3s;\n  }\n  :hover {\n    img {\n      transform: scale(1.2);\n    }\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  img {\n    transition: transform 0.3s;\n  }\n  :hover {\n    img {\n      transform: scale(1.2);\n    }\n  }\n"])));
 var StyledImage = styled__default['default'].img(templateObject_2$6 || (templateObject_2$6 = __makeTemplateObject(["\n  margin-right: 8px;\n"], ["\n  margin-right: 8px;\n"])));
 var CakePrice = function (_a) {
-    var cakePriceUsd = _a.cakePriceUsd;
-    return cakePriceUsd ? (React__default['default'].createElement(PriceLink, { href: "https://pancakeswap.finance/swap?outputCurrency=0xd91a6660e938f2a4ca9117d104f31a30be7f251b", target: "_blank" },
-        React__default['default'].createElement(StyledImage, { src: "/logo.png", width: 24, height: 26 }),
-        React__default['default'].createElement(Skeleton, { width: 80, height: 24 }))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 }));
+    _a.cakePriceUsd;
+    // return cakePriceUsd ? (
+    //   <PriceLink
+    //     href="https://pancakeswap.finance/swap?outputCurrency=0xd91a6660e938f2a4ca9117d104f31a30be7f251b"
+    //     target="_blank"
+    //   >
+    //     <StyledImage src="/logo.png" width={24} height={26} />
+    //     <Text color="textSubtle" bold>{`$${cakePriceUsd.toFixed(3)}`}</Text>
+    //   </PriceLink>
+    // ) : (
+    //   <Skeleton width={80} height={24} />
+    // );
+    return (React__default['default'].createElement(StyledImage, { src: "/logo.png", width: 24, height: 26 }));
 };
 var CakePrice$1 = React__default['default'].memo(CakePrice);
 var templateObject_1$a, templateObject_2$6;
